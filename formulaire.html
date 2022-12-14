@@ -1,0 +1,33 @@
+<!doctype HTML>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <form action="urlCible.php" method="POST">
+            <!-- Le fieldset met un peu de style basique -->
+            <fieldset>
+                <legend>Informations utilisateur</legend>
+                Nom d'utilisateur : <input type="text" name="username" /><br />
+                Mot de passe : <input type="password" name="mot_de_passe" />
+                <hr />
+                Sexe : 
+                <select name="sexe">
+                    <option value="H">Homme</option>
+                    <option value="F">Femme</option>
+                </select>
+                <hr />
+                Votre bio : <textarea name="bio" placeholder="Tapez votre bio ici..."></textarea>
+                <hr />
+                Des adjectifs pour me définir :<br />
+                <input type="checkbox" name="adjectifs[]" value="intelligent" /> Intelligent<br />
+                <input type="checkbox" name="adjectifs[]" value="beau gosse" /> Beau gosse
+                <hr />
+                Voulez-vous être riche ?<br />
+                <input type="checkbox" name="riche" value="oui" /> Oui<br />
+                <input type="checkbox" name="riche" value="non" /> Non
+                <hr />
+                <input type="submit" value="Envoyer !" />
+            </fieldset>
+        </form>
+    </body>
+</html>
